@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <title>Home Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Sirin+Stencil" rel="stylesheet">
+    <style>
+        .display {
+            position: relative;
+            background: linear-gradient(#242222,transparent), url("https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9dd8da96be0724ab84e4147d428f6bba&auto=format&fit=crop&w=738&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar-brand {
+            font-family: Sirin Stencil;
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+         .panel-heading {
+            font-family: Sirin Stencil;
+            font-weight: 400;
+            font-size: 35px;
+            margin-left: 33%;
+        }
+        .form-group, .form-control {
+            font-family: Sirin Stencil;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .panel-body{
+          margin-left: 33%
+        }
+         .container{
+          width: 50%;
+          margin-top: 10%;
+        }
+        body{
+          color:white;
+          height:100%;
+        }
+        html{
+          height:100%;
+        }
+    </style>
+
+</head>
+<body class="display">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Node-Zomato</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+    <form action="/search" method="post">
+      <div class="form-group">
+        <label for="city">Enter the location</label>
+            <input class= "form-control" type="text" name="city" id="city" placeholder= "Surat, India, etc." required>
+      </div>
+      <button type="submit" class="btn btn-light">Search</button>
+    </form>
+    </div>
+</body>
+</html>
